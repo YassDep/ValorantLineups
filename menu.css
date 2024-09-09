@@ -1,0 +1,25 @@
+.menu {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 5px;
+  }
+  
+  .menu .label {
+    font-weight: bold;
+  }
+  
+  .menu .item a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+  }
+  
+  .menu .item a:hover {
+    color: blue;
+  }
+  
+  .map-options {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 10px;
+  }

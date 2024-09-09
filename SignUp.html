@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="Login.css">
+  <script src="SignUp.js"></script>
+
+</head>
+<body>
+    <div id="grad1" class="background"></div>
+    <a href="index.html">
+      <img src="Valorant-Emblem.png" class="logo">
+    </a>
+    <div id="grad1"></div>
+    <form class="form" method="post" action="signup.php">
+      <div class="background-image"></div>
+      <div class="input-div">
+        <label class="label" for="email">Email</label>
+        <input id="email" name="email" type="email" autofocus required>
+      </div>
+      <div class="input-div">
+        <label class="label" for="firstName">First Name</label>
+        <input id="firstName" name="firstName" type="text" required>
+      </div>
+      <div class="input-div">
+        <label class="label" for="lastName">Last Name</label>
+        <input id="lastName" name="lastName" type="text" required>
+      </div>
+      <div class="input-div">
+        <label class="label" for="password">Password</label>
+        <input id="password" name="password" type="password" minlength="8" required>
+      </div>
+      <div class="input-div">
+        <label class="label" for="confirmPassword">Confirm Password</label>
+        <input id="confirmPassword" name="confirmPassword" type="password" minlength="8" required>
+      </div>
+  
+      <input type="submit" name="" value="SIGN UP" onclick="validate(event)" class="submit" />
+      <div class="span">Already have an account? <a href="index.html">Log in</a></div>
+  
+    </form>
+    <div>
+      <p id="length"></p>
+    </div>
+  </body>
+  
+  </html>
+  
+  </html>

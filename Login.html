@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="Login.css">
+  <script src="Login.js"></script>
+  <title>Login Page</title>
+</head>
+
+<body>
+  <div id="grad1" class="background"></div>
+  <a href="index.html">
+    <img src="Valorant-Emblem.png" class="logo">
+  </a>
+  <div id="grad1"></div>
+  <form class="form" method="post" action="login.php">
+    <div class="background-image"></div>
+    <div class="input-div">
+      <label class="label" for="email">Email</label>
+      <input id="email" name="email" type="email" autofocus onload="this.select()" required>
+    </div>
+    <div class="input-div">
+      <label class="label" for="password">Password</label>
+      <input id="password" name="password" type="password">
+    </div>
+
+    <input type="submit" name="" value="LOGIN" class="submit" />
+    <div class="span">Don't have an account? <a href="SignUp.html">Sign up</a></div>
+
+  </form>
+  <div>
+    <p id="length"></p>
+  </div>
+
+  <!-- <?php
+  // Establish database connection
+  $db_host = "localhost";
+  $db_user = "root";
+  $db_pass = "";
+  $db_name = "login_system";
+
+  $conn = mysqli_connect($db_host, $db_user, $db_pass, $db_name);
+
+  if (!$conn) {
+      die("Connection failed: " . mysqli_connect_error());
+  }
+
+  // Handle form submission
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+      $email = $_POST["email"];
+      $password = $_POST["password"];
+
+      // Validate user credentials (this is just a simple example)
+      $sql = "SELECT id FROM users WHERE email='$email' AND password='$password'";
+      $result = mysqli_query($conn, $sql);
+
+      if (mysqli_num_rows($result) == 1) {
+          // Successful login
+          header("Location: Home.html");
+          exit();
+      } else {
+          // Login failed
+          echo "Login failed. Please check your credentials.";
+      }
+  }
+
+  mysqli_close($conn);
+  ?> -->
+</body>
+
+</html>

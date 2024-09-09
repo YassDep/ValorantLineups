@@ -1,0 +1,127 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to top right, #000000, #660000),
+    radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.8) 20%,
+      rgba(255, 255, 255, 0) 80%
+    );
+  background-blend-mode: multiply;
+}
+
+.logo {
+  position: absolute;
+  top: -5px;
+  left: -10px;
+  width: 100px; 
+  height: 65px; 
+  margin: 20px;
+}
+
+.background-image {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("Valorant-Emblem.png");
+  background-size: 55%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+form {
+  --lg-w: #efefef; 
+  --br-bc: #707070; 
+  --ltr: #ffffff; 
+  --ltr-alpha: #9c9c9c60;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  width: 80%;
+  max-width: 400px;
+}
+
+.input-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+form input[type="email"],
+form input[type="password"],
+form input[type="text"] {
+  border-radius: 0.5rem;
+  padding: 1rem 0.75rem;
+  width: 100%;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--ltr-alpha);
+  outline: 2px solid var(--br-bc);
+}
+
+form input[type="email"]:focus,
+form input[type="password"]:focus,
+form input[type="text"]:focus {
+  outline: 2px solid var(--ltr);
+}
+
+.label {
+  align-self: flex-start;
+  color: var(--ltr);
+  font-weight: 600;
+}
+
+form .submit {
+  padding: 0.7rem 2.8rem;
+  width: 35%;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 3rem;
+  background-color: var(--br-bc);
+  color: var(--lg-w);
+  border: none;
+  cursor: pointer;
+  transition: all 300ms;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+form .submit:hover {
+  background-color: var(--ltr);
+  color: var(--br-bc);
+}
+
+.span {
+  text-decoration: none;
+  color: var(--br-bc);
+}
+
+.span a {
+  color: var(--ltr);
+}
+
+
+@media screen and (max-width: 600px) {
+  form {
+    width: 90%;
+  }
+
+  form .submit {
+    max-width: none;
+  }
+}
